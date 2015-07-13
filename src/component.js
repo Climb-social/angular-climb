@@ -3,38 +3,21 @@
 
     var ngModule = angular.module('climb', ['ng']);
 
-    ngModule.provider('Climb', ClimbProvider);
+    ngModule.factory('ClimbFactory', ['$http', ClimbFactory]);
 
+    function ClimbFactory($http) {
 
-    function ClimbProvider() {
+        var climb = {
+            getFeed: function(FEED_ID) {
 
-        var FEED_ID;
-
-        var climbProvider = {
-
-            setFeedId: function(id) {
-                FEED_ID = id;
-                return true;
-            },
-
-            $get: function ($http) {
-
-                return {
-                    getContent: function() {
-
-                        if (!FEED_ID) {
-                            throw new Error('Please set a feedId');
-                        }
-                        //return $http.get();
-                    }
-                };
+                if (!FEED_ID) {
+                    throw new Error('Please specify a feedId');
+                }
 
             }
-
-
         };
 
-        return climbProvider;
+        return climb;
 
     }
 
