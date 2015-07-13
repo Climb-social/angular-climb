@@ -1,17 +1,18 @@
 {
-  "author": "Pascal Precht",
-  "name": "angular-component-seed",
-  "description": "Seed for reusable Angular components.",
+  "author": "Michele Memoli",
+  "name": "angular-climb",
+  "description": "Angular module for interacting with the Climb.social public API",
   "version": "0.1.1",
-  "homepage": "http://github.com/PascalPrecht/angular-component-seed",
+  "homepage": "https://github.com/Climb-social/angular-climb.git",
   "repository": {
     "type": "git",
-    "url": "git://github.com/PascalPrecht/angular-component-seed"
+    "url": "git://github.com/Climb-social/angular-climb"
   },
   "dependencies": {
-    "angular": "~1.2.3"
+    "angular": "~1.4.2"
+
   },
   "devDependencies": {
-    "angular-mocks": "~1.2.3"
+    "angular-mocks": "~1.4.2"
   }
 }

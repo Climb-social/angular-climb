@@ -1,19 +1,19 @@
-describe('author.component-name', function () {
+describe('climb.social', function () {
 
-  beforeEach(module('author.component-name'));
+  beforeEach(module('climb.social'));
 
-  it('should have thingService', function () {
-    inject(function (thingService) {
-      expect(thingService).toBeDefined();
+  it('should have ClimbService', function () {
+    inject(function (ClimbService) {
+      expect(ClimbService).toBeDefined();
     });
   });
 
-  describe('thingService', function () {
+  describe('ClimbService', function () {
 
-    var thingService;
+    var climbService;
 
-    beforeEach(inject(function (_thingService_) {
-      thingService = _thingService_;
+    beforeEach(inject(function (_ClimbService_) {
+        climbService = _ClimbService_;
     }));
 
     it('should be an object', function () {

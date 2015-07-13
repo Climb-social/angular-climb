@@ -1,9 +1,14 @@
-angular.module('author.component-name', ['ng']);
+var ngModule = angular.module('climb.social', ['ng']);
 
-angular.module('author.component-name').factory('thingService', function () {
-  return {
-    sayHello: function () {
-      return 'Hello!';
-    }
-  };
-});
+
+
+ngModule.factory('ClimbService', ClimbService);
+
+function ClimbService() {
+
+    var climbService = {
+
+    };
+
+    return climbService;
+}
