@@ -1,0 +1,26 @@
+{
+  "name": "angular-climb",
+  "version": "0.1.1",
+  "description": "Angular module for interacting with the Climb.social public API",
+  "main": "component.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Climb-social/angular-climb.git"
+  },
+  "keywords": [
+    "Angular",
+    "climb.social"
+  ],
+  "author": "Michele Memoli <michele@100shapes.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Climb-social/angular-climb/issues"
+  },
+  "homepage": "https://github.com/Climb-social/angular-climb#readme"
+}
