@@ -12,7 +12,7 @@ describe('When testing the climb module,', function () {
     describe('the ClimbFactory service', function () {
 
         var service;
-        var $httpBackend
+        var $httpBackend;
 
         beforeEach(inject(function (_ClimbFactory_, _$httpBackend_) {
             service = _ClimbFactory_;
@@ -43,15 +43,15 @@ describe('When testing the climb module,', function () {
                 }).not.toThrow();
             });
 
-            it('should make a JSONP request to the Climb API server', inject(function($q) {
+            it('should make a JSONP request to the Climb API server', function() {
                 var FEED_ID = '1111';
-                var url = 'http://climb.social/api/v1/collections/' + FEED_ID + '?callback=JSON_CALLBACK';
+                var url = 'http://curate.uat.engine6.com/api/v1/collections/' + FEED_ID + '?callback=JSON_CALLBACK';
                 $httpBackend
                     .expectJSONP(url)
                     .respond();
                 service.getFeed(FEED_ID);
                 $httpBackend.flush();
-            }));
+            });
 
         });
 

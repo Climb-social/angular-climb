@@ -5,13 +5,13 @@
 
 
     ngModule
-        .constant('CLIMB_BASE_URL', 'http://climb.social/api/v1/collections/')
+        .constant('CLIMB_BASE_URL', 'http://curate.uat.engine6.com/api/v1/collections/')
 
         .factory('ClimbFactory', ['$http', 'CLIMB_BASE_URL', ClimbFactory]);
 
     function ClimbFactory($http, CLIMB_BASE_URL) {
 
-        var climb = {
+        return ({
             getFeed: function(FEED_ID) {
 
                 if (!FEED_ID) {
@@ -26,9 +26,8 @@
                     });
 
             }
-        };
+        });
 
-        return climb;
 
     }
 
