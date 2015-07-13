@@ -1,5 +1,6 @@
-var ngModule = angular.module('climb.social', ['ng']);
+'use strict';
 
+var ngModule = angular.module('climb', ['ng']);
 
 
 ngModule.factory('ClimbService', ClimbService);
@@ -12,3 +13,5 @@ function ClimbService() {
 
     return climbService;
 }
+
+
