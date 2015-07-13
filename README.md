@@ -23,7 +23,11 @@ Use the service whenever you want it:
     function controller(Climb) {
         var vm = this;
         
-        vm.social = Climb.getFeed(FEED_ID);
+        var FEED_ID = '7216e32607f244179f5c51350a2ee2c8';
+        Climb.getFeed(FEED_ID).then(function(items) {
+            vm.social = items;
+        });
+        
     }
     
 
