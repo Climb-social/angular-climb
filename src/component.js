@@ -7,7 +7,7 @@
 
     ngModule.factory('ClimbService', ClimbService);
 
-    function ClimbService() {
+    function ClimbService($http) {
 
         var climbService = {
 

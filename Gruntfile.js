@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 
   var karmaConfig = function(configFile, customOptions) {
     var options = { configFile: configFile, keepalive: true };
-    var travisOptions = process.env.TRAVIS && { browsers: ['Firefox'], reporters: 'dots' };
+    var travisOptions = process.env.TRAVIS && { browsers: ['Chrome'], reporters: 'dots' };
     return _.extend(options, customOptions, travisOptions);
   };
 
@@ -37,7 +37,7 @@ module.exports = function (grunt) {
     concat: {
       src: {
         src: ['src/**/*.js'],
-        dest: 'dist/angular-component-<%= pkg.version %>.js'
+        dest: 'dist/angular-climb-<%= pkg.version %>.js'
       }
     },
     uglify: {
