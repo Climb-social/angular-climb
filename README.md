@@ -1,7 +1,7 @@
-# angular-component-seed
+# angular-climb
 
-[![Build Status](https://travis-ci.org/PascalPrecht/angular-component-seed.png)](https://travis-ci.org/PascalPrecht/angular-component-seed)
- +[![Dependency Status](https://david-dm.org/PascalPrecht/angular-component-seed.png)](https://david-dm.org/PascalPrecht/angular-component-seed)
- +[![devDependency Status](https://david-dm.org/PascalPrecht/angular-component-seed/dev-status.png)](https://david-dm.org/PascalPrecht/angular-component-seed)
+Reusable module for interacting the climb.social public API.
 
-> A seed for reusable Angular components
+## References
+
+[Docs](http://docs.climb.social/)
