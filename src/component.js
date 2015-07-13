@@ -1,19 +1,41 @@
 (function () {
     'use strict';
 
-
     var ngModule = angular.module('climb', ['ng']);
 
+    ngModule.provider('Climb', ClimbProvider);
 
-    ngModule.factory('ClimbService', ClimbService);
 
-    function ClimbService($http) {
+    function ClimbProvider() {
 
-        var climbService = {
+        var FEED_ID;
+
+        var climbProvider = {
+
+            setFeedId: function(id) {
+                FEED_ID = id;
+                return true;
+            },
+
+            $get: function ($http) {
+
+                return {
+                    getContent: function() {
+
+                        if (!FEED_ID) {
+                            throw new Error('Please set a feedId');
+                        }
+                        //return $http.get();
+                    }
+                };
+
+            }
+
 
         };
 
-        return climbService;
+        return climbProvider;
+
     }
 
 }());
