@@ -47,6 +47,10 @@ module.exports = function (grunt) {
                 }
             }
         },
+        bump: {
+            files: ['package.json', 'bower.json'],
+            updateConfigs: ['pkg']
+        },
         karma: {
             unit: {
                 options: karmaConfig('karma.conf.js', {

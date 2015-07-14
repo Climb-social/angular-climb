@@ -39,5 +39,7 @@
     "load-grunt-tasks": "~0.2.0",
     "lodash": "~2.4.x"
   },
-  "dependencies": {}
+  "dependencies": {
+    "grunt-bump": "^0.3.1"
+  }
 }

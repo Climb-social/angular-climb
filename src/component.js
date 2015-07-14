@@ -23,7 +23,7 @@
 
 
     ngModule
-        .constant('CLIMB_BASE_URL', 'http://app.climb.social/api/collections/')
+        .constant('CLIMB_BASE_URL', 'http://app.climb.social/api/v1/collections/')
 
         .factory('ClimbFactory', ['$http', 'CLIMB_BASE_URL', ClimbFactory]);
 
@@ -36,7 +36,7 @@
                     throw new Error('Please specify a feedId');
                 }
 
-                var climbFeedUrl = [CLIMB_BASE_URL, FEED_ID].join('');
+                var climbFeedUrl = [CLIMB_BASE_URL, FEED_ID, '?callback=JSON_CALLBACK'].join('');
 
                 return $http.jsonp(climbFeedUrl)
                     .then(function success(response) {

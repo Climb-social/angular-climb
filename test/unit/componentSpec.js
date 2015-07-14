@@ -25,7 +25,7 @@ describe('When testing the climb module,', function () {
 
         describe('has a getFeed() method that', function() {
 
-
+            var FEED_ID = '55a4dac845284e58ac50ee1c';
 
             it('should be a function', function () {
                 expect(typeof service.getFeed).toBe('function');
@@ -44,8 +44,7 @@ describe('When testing the climb module,', function () {
             });
 
             it('should make a JSONP request to the Climb API server', function() {
-                var FEED_ID = '1111';
-                var url = 'http://app.climb.social/api/collections/' + FEED_ID;
+                var url = 'http://app.climb.social/api/v1/collections/' + FEED_ID;
                 $httpBackend
                     .expectJSONP(url)
                     .respond();

@@ -16,7 +16,7 @@
 <body ng-controller="SocialWallCtrl as vm">
 
     <ol>
-        <li ng-repeat="item in vm.items track by $index">
+        <li ng-repeat="item in vm.items track by item.id">
             {{ item.message }}
         </li>
     </ol>
@@ -34,7 +34,7 @@
     function SocialWallCtrl(ClimbFactory) {
         var vm = this;
 
-        var feedId = '7216e32607f244179f5c51350a2ee2c8';
+        var feedId = '55a4dac845284e58ac50ee1c';
         ClimbFactory.getFeed(feedId).then(function(items) {
            vm.items = items;
         });
