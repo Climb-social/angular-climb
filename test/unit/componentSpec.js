@@ -1,6 +1,6 @@
 describe('When testing the climb module,', function () {
 
-    beforeEach(module('climb'));
+    beforeEach(module('angular-climb'));
 
     it('it should have Climb service', function () {
         inject(function (ClimbFactory) {

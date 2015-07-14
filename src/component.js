@@ -17,7 +17,7 @@
 
     'use strict';
 
-    var moduleName = 'climb';
+    var moduleName = 'angular-climb';
 
     var ngModule = angular.module(moduleName, ['ng']);
 
