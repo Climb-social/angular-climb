@@ -48,8 +48,10 @@ module.exports = function (grunt) {
             }
         },
         bump: {
-            files: ['package.json', 'bower.json'],
-            updateConfigs: ['pkg']
+            files: ["src/**/*.js", "test/**/*.js"],
+            updateConfigs: ["pkg"],
+            commitFiles: ["-a"],
+            push: false
         },
         karma: {
             unit: {
