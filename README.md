@@ -29,6 +29,10 @@ Use the service whenever you want it:
         });
         
     }
+
+### Example
+
+See [demo!](example/index.html) in this repo for an example of how to use.
     
 
 ## Running tests
