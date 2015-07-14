@@ -8,7 +8,13 @@ Reusable module for interacting the climb.social public API.
 
 ## Installation
 
-Coming soon.
+Via NPM:
+
+    $ npm install angular-climb --save
+
+Or bower:
+
+    $ bower install angular-climb --save
 
 ## Usage
 
