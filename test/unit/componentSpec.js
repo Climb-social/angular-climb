@@ -39,12 +39,12 @@ describe('When testing the climb module,', function () {
 
             it('should not throw an error if feedId is provided', function () {
                 expect(function() {
-                    service.getFeed('1111');
+                    service.getFeed(FEED_ID);
                 }).not.toThrow();
             });
 
             it('should make a JSONP request to the Climb API server', function() {
-                var url = 'http://app.climb.social/api/v1/collections/' + FEED_ID;
+                var url = 'http://app.climb.social/api/v1/collections/' + FEED_ID + '?callback=JSON_CALLBACK';
                 $httpBackend
                     .expectJSONP(url)
                     .respond();

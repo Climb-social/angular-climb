@@ -17,7 +17,7 @@
   'use strict';
   var moduleName = 'climb';
   var ngModule = angular.module(moduleName, ['ng']);
-  ngModule.constant('CLIMB_BASE_URL', 'http://app.climb.social/api/collections/').factory('ClimbFactory', [
+  ngModule.constant('CLIMB_BASE_URL', 'http://app.climb.social/api/v1/collections/').factory('ClimbFactory', [
     '$http',
     'CLIMB_BASE_URL',
     ClimbFactory
@@ -30,7 +30,8 @@
         }
         var climbFeedUrl = [
             CLIMB_BASE_URL,
-            FEED_ID
+            FEED_ID,
+            '?callback=JSON_CALLBACK'
           ].join('');
         return $http.jsonp(climbFeedUrl).then(function success(response) {
           return response.data;
