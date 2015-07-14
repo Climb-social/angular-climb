@@ -3,7 +3,7 @@
 
 ### Features
 
-    `climb` service available with a `getFeed()` method.
+`climb` service available with a `getFeed()` method.
 
 Initial release.
 
