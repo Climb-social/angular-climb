@@ -43,7 +43,7 @@ module.exports = function (grunt) {
     uglify: {
       src: {
         files: {
-          'dist/angular-component-<%= pkg.version %>.min.js': '<%= concat.src.dest %>'
+          'dist/angular-climb-<%= pkg.version %>.min.js': '<%= concat.src.dest %>'
         }
       }
     },

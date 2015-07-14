@@ -5,7 +5,7 @@
 
 
     ngModule
-        .constant('CLIMB_BASE_URL', 'http://curate.uat.engine6.com/api/v1/collections/')
+        .constant('CLIMB_BASE_URL', 'http://app.climb.social/api/collections/')
 
         .factory('ClimbFactory', ['$http', 'CLIMB_BASE_URL', ClimbFactory]);
 
@@ -20,7 +20,7 @@
 
                 var climbFeedUrl = [CLIMB_BASE_URL, FEED_ID].join('');
 
-                return $http.jsonp(climbFeedUrl + '?callback=JSON_CALLBACK')
+                return $http.jsonp(climbFeedUrl)
                     .then(function success(response) {
                         return response.data;
                     });

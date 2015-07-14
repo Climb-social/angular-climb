@@ -45,7 +45,7 @@ describe('When testing the climb module,', function () {
 
             it('should make a JSONP request to the Climb API server', function() {
                 var FEED_ID = '1111';
-                var url = 'http://curate.uat.engine6.com/api/v1/collections/' + FEED_ID + '?callback=JSON_CALLBACK';
+                var url = 'http://app.climb.social/api/collections/' + FEED_ID;
                 $httpBackend
                     .expectJSONP(url)
                     .respond();
