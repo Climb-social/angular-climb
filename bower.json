@@ -2,7 +2,7 @@
   "author": "Michele Memoli",
   "name": "angular-climb",
   "description": "Angular module for interacting with the Climb.social public API",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "homepage": "https://github.com/Climb-social/angular-climb.git",
   "repository": {
     "type": "git",

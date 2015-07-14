@@ -16,7 +16,11 @@ Configure your Climb feed in the Climb admin UI. Note the `feedId`.
 
 Add the module to your app dependencies:
 
-    angular.module('myApp', ['climb'])
+    var angular = require('angular');
+    
+    angular.module('myApp', [
+      require('angular-climb')
+    ]);
     
 Use the service whenever you want it:
 
