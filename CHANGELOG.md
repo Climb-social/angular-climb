@@ -1,3 +1,10 @@
+<a name"1.1.0"></a>
+## 1.1.0 (2015-07-16)
+
+### Features
+
+- Added ability to limit the number of items to return
+
 <a name"1.0.2"></a>
 ### 1.0.2 (2015-07-16)
 

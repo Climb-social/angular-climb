@@ -1,8 +1,8 @@
 {
   "name": "angular-climb",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Angular module for interacting with the Climb.social public API.",
-  "main": "dist/angular-climb-1.0.2.js",
+  "main": "dist/angular-climb-1.1.0.js",
   "directories": {
     "test": "test"
   },

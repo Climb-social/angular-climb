@@ -39,6 +39,21 @@ Use the service whenever you want it:
         });
         
     }
+    
+By default, all items are return but you can limit the number of items you want by specifying a limit in your `getFeed` call:
+
+    function controller(Climb) {
+        var vm = this;
+        
+        var FEED_ID = '7216e32607f244179f5c51350a2ee2c8';
+        var limit = 3;
+        
+        Climb.getFeed(FEED_ID, limit).then(function(items) {
+            vm.social = items;
+        });
+        
+    }
+
 
 ### Example
 

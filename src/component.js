@@ -30,7 +30,7 @@
     function ClimbFactory($http, CLIMB_BASE_URL) {
 
         return ({
-            getFeed: function(FEED_ID) {
+            getFeed: function(FEED_ID, limit) {
 
                 if (!FEED_ID) {
                     throw new Error('Please specify a feedId');
@@ -40,7 +40,12 @@
 
                 return $http.jsonp(climbFeedUrl)
                     .then(function success(response) {
-                        return response.data;
+                        var items = response.data;
+
+                        if(items) {
+                            return items.slice(0, limit);
+                        }
+                        return items;
                     });
 
             }
