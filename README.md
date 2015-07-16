@@ -59,3 +59,5 @@ Then run with grunt:
 ## References
 
 [Docs](http://docs.climb.social/)
+[100 Shapes](http://www.100shapes.com/)
+[Climb.social](http://www.climb.social/)
