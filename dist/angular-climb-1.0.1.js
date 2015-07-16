@@ -15,7 +15,7 @@
   }
 }(this, function (angular) {
   'use strict';
-  var moduleName = 'climb';
+  var moduleName = 'angular-climb';
   var ngModule = angular.module(moduleName, ['ng']);
   ngModule.constant('CLIMB_BASE_URL', 'http://app.climb.social/api/v1/collections/').factory('ClimbFactory', [
     '$http',
